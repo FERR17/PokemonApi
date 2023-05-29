@@ -51,7 +51,7 @@ class Item (BaseModel):
       price: float
 
 @app.post("/items/")
-def create_item(item: item)
+def create_item(item: Item)
 return item
 
 {

@@ -44,11 +44,11 @@ def revisar_edades(E1,E2):
      return "Es mayor que tu"
     else:
      return "Tienen la misma edad"
-     
-   class Item (BaseModel):
-          name: str
-          description: str
-           price: float
+
+class Item (BaseModel):
+      name: str
+      description: str
+      price: float
 
 @app.post("/items/")
 def create_item(item: item)

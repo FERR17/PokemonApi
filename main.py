@@ -17,5 +17,4 @@ def conversorCaF(C):
          C=float(C)
          TF=C*(9/5) + 32
          return f"La temperatura es de {TF} grados Farenheit"
-    except:
-    return "Entrada invalida"
+       

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from pyndantic import BaseModel
 
 app=FastAPI()
 
@@ -42,5 +43,20 @@ def conversorCaF(C):
     elif E2>E1:
         return "Es mayor que tu"
     else:
-        return "Tienen la misma edad
+        return "Tienen la misma edad"
+     
+   class Item (BaseModel):
+          name: str
+          description: str
+           price: float
+
+@app.post("/items/")
+def create_item(item: item)
+return item
+
+{
+     "name":"Computadora"
+     "description":"Una computadora X"
+     "price":20000
+}
      

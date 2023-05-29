@@ -54,9 +54,8 @@ class Item (BaseModel):
 def create_item(item: Item):
     return item
 
-{
-     "name":"Computadora"
-     "description":"Una computadora X"
-     "price":20000
-}
-     
+    {
+           "name": "Computadora"
+           "description": "Una computadora X"
+           "price": 20000
+    }

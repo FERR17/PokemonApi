@@ -8,7 +8,7 @@ def index():
      return "Hola a todos, quieres saber de pokemon"
 
 @app.get("/Pokemon/{num}")
-def pokemon{num}:
+def pokemons(num):
         pokemons={
          "1":"Bulbasaur",
          "2":"Ivysaur",
@@ -16,7 +16,7 @@ def pokemon{num}:
          "4":"Charmander"
      
     }
-    return pokemons{num}
+    return pokemons(num)
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):

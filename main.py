@@ -26,7 +26,7 @@ def conversorCaF(C):
             return f"La temperatura es de {TF} grados Farenheit"
     except:
             return "Entrada invalida"
-     @app.get("/RevisarEdad/{E1}/{E2}")
+ @app.get("/RevisarEdad/{E1}/{E2}")
      def revisar_edades(E1,E2):
           E1=int(E1)
           E2=int(E2)

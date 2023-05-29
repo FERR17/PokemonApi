@@ -16,7 +16,7 @@ def pokemons(num):
          "4":"Charmander"
      
     }
-    return (pokemons[num])
+    return (pokemons[id])
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):

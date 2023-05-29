@@ -1,4 +1,4 @@
-from fastapi import fastAPI
+from fastapi import FastAPI
 
 app=FastAPI()
 

@@ -13,10 +13,10 @@ def pokemons(num):
          "1":"Bulbasaur",
          "2":"Ivysaur",
          "3":"Venasaur",
-         "4":"Charmander",
+         "4":"Charmander"
      
     }
-    return pokemons{num}
+    return (pokemons[num])
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):

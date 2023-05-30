@@ -88,13 +88,15 @@ def conversorCaK(C):
 def revisar_edades(E1,E2):
     E1=int(E1)
     E2=int(E2)
-    if E1>E2:
-     return "Es Legal"
-    elif E1<E2:
-     return "Es Ilegal"
-    elif E2>E1:
-     return "Es Legal"
-    elif E2<E1:
-     return "Es Ilegal"
-    else:
-     return "Es Legal"
+    if E1>E2+30:
+     return "Podria ser su abuelo"
+    elif E1>E2+15:
+     return "Podrias ser su padre"
+    elif E1>E2:
+     return "Eres mayor"
+    elif E2>E1+30:
+     return "Podria ser tu abuelo"
+    elif E2>E1+15:
+     return "Podria ser tu padre"
+    else E2>E1:
+      return "Es mayor"

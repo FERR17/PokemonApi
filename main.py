@@ -56,6 +56,6 @@ def create_item(item: Item):
 
     {
     "name": "Computadora"
-    "description": "Una Computadora X"
+    "description" "Una Computadora X"
     "price": 20000
     }

@@ -76,12 +76,12 @@ def MCU(num):
     }
     return (peliculas[num])
 
-@app.get("/Conversor_CaF/{C}")
-def conversorCaF(C):
+@app.get("/Conversor_CaK/{C}")
+def conversorCaK(C):
     try:
             C=float(C)
-            TF=C*(9/5) + 32
-            return f"La temperatura es de {TF} grados Farenheit"
+            TF=C + 273.15
+            return f"La temperatura es de {TF} grados Kelvin"
     except:
             return "Entrada invalida"
 @app.get("/RevisarEdad/{E1}/{E2}")

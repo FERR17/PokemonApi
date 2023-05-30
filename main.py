@@ -94,3 +94,14 @@ def marcador(E1,E2):
       return "Perdiste"
     else:
       return "Empataste"
+@app.get("/Pokemon/{num}")
+def pokemon(num):
+    pokemons={
+    "1":"Bulbasaur",
+    "2":"Ivysaur",
+    "3":"Venasaur",
+    "4":"Charmander",
+    "5":"Charmeleon",
+    "6":"Charizard"
+    }
+    return (pokemons[num])

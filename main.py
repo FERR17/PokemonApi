@@ -84,7 +84,7 @@ def conversorCaK(C):
             return f"La temperatura es de {TF} grados Kelvin"
     except:
             return "Entrada invalida"
-@app.get("/RelacionLegal/{E1}/{E2}")
+@app.get("/RevisarEdad/{E1}/{E2}")
 def revisar_edades(E1,E2):
     E1=int(E1)
     E2=int(E2)
@@ -98,5 +98,7 @@ def revisar_edades(E1,E2):
      return "Podria ser tu abuelo"
     elif E2>E1+15:
      return "Podria ser tu padre"
-    else E2>E1:
-      return "Es mayor"
+    elif E2>E1:
+      return "Es mayor que tu"
+    else:
+      return "Tienen la misma edad"

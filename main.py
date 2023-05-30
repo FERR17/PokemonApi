@@ -102,6 +102,9 @@ def pokemon(num):
     "3":"Venasaur",
     "4":"Charmander",
     "5":"Charmeleon",
-    "6":"Charizard"
+    "6":"Charizard",
+    "7":"Squirtle",
+    "8":"Wartortle",
+    "9":"Blastoise"
     }
-    return (pokemons[num])
+    return(pokemons[num])

@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from pyndantic import BaseModel
 
 app=FastAPI()
 

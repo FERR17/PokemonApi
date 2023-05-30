@@ -6,17 +6,74 @@ app=FastAPI()
 def index():
      return "Hola a todos, quieres saber de pokemon"
 
-@app.get("/MCU/{num}")
+@app.get("/MCU/Phase1/{num}")
 def pokemon(num):
-    pokemons={
+    peliculas={
     "1":"Iron Man",
     "2":"The Incredible Hulk",
     "3":"Iron Man 2",
     "4":"Thor",
-    "5":"Captain America: The First Avenger"
+    "5":"Captain America: The First Avenger",
+    "6":"The Avengers"
          
     }
-    return (pokemons[num])
+    return (peliculas[num])
+
+@app.get("/MCU/Phase2/{num}")
+def pokemon(num):
+    peliculas={
+    "1":"Iron Man 3",
+    "2":"Thor The Dark World",
+    "3":"Captain America: The Winter Soldier",
+    "4":"Guardians Of The Galaxy",
+    "5":"The Avengers: Age Of Ultron",
+    "6":"Ant-Man"
+         
+    }
+    return (peliculas[num])
+
+@app.get("/MCU/Phase3/{num}")
+def pokemon(num):
+    peliculas={
+    "1":"Captain America: Civil War",
+    "2":"Doctor Strange",
+    "3":"Guardians Of The Galaxy Vol.2",
+    "4":"Spiderman: Homecoming",
+    "5":"Thor Ragnarok",
+    "6":"Black Panther",
+    "7":"Avengers: Infinity War",
+    "8":"Ant_Man And The Wasp",
+    "9":"Captain Marvel",
+    "10":"Avengers Engame",
+    "11":"Spiderman: Far From Home"
+         
+    }
+    return (peliculas[num])
+
+@app.get("/MCU/Phase4/{num}")
+def pokemon(num):
+    peliculas={
+    "1":"WandaVision",
+    "2":"Falcon And The Winter Soldier",
+    "3":"Black Widow",
+    "4":"What If...?",
+    "5":"Shang-Chi And The Legend Of The Ten Rings",
+    "6":"Eternals",
+    "7":"Hawkeye",
+    "8":"Spiderman: No Way Home",
+    "9":"Moonknight",
+    "10":"Doctor Strange: In The Multiverse Of Madness",
+    "11":"Ms. Marvel",
+    "12":"Thor: Love And Thunder",
+    "13":"She-Hulk Attorney At Law",
+    "14":"Werewolf By Night",
+    "15":"Black Panther Wakanda Forever",
+    "16":"Guardians Of The Galaxy Holiday Special",
+    "17":"Ant-Man And The Wasp: Quantumania",
+    "18":"Guardians Of The Galaxy Vol.3"
+         
+    }
+    return (peliculas[num])
 
 @app.get("/Conversor_CaF/{C}")
 def conversorCaF(C):

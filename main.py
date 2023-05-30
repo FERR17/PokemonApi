@@ -55,7 +55,7 @@ def create_item(item: Item):
     return item
 
     {
-    "name": "Computadora"
+    "name" "Computadora"
     "description" "Una Computadora X"
-    "price": 20000
+    "price" "20000"
     }

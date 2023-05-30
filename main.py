@@ -45,7 +45,7 @@ def revisar_edades(E1,E2):
     else:
      return "Tienen la misma edad"
 
-class Item (BaseModel):
+class item (BaseModel):
       name: str
       description: str
       price: float

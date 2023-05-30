@@ -7,7 +7,7 @@ def index():
      return "Hola a todos, quieres saber de pokemon"
 
 @app.get("/MCU/Phase1/{num}")
-def pokemon(num):
+def MCU(num):
     peliculas={
     "1":"Iron Man",
     "2":"The Incredible Hulk",
@@ -20,7 +20,7 @@ def pokemon(num):
     return (peliculas[num])
 
 @app.get("/MCU/Phase2/{num}")
-def pokemon(num):
+def MCU(num):
     peliculas={
     "1":"Iron Man 3",
     "2":"Thor The Dark World",
@@ -33,7 +33,7 @@ def pokemon(num):
     return (peliculas[num])
 
 @app.get("/MCU/Phase3/{num}")
-def pokemon(num):
+def MCU(num):
     peliculas={
     "1":"Captain America: Civil War",
     "2":"Doctor Strange",
@@ -51,7 +51,7 @@ def pokemon(num):
     return (peliculas[num])
 
 @app.get("/MCU/Phase4/{num}")
-def pokemon(num):
+def MCU(num):
     peliculas={
     "1":"WandaVision",
     "2":"Falcon And The Winter Soldier",

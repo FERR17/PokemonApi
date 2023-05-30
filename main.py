@@ -90,13 +90,9 @@ def revisar_edades(E1,E2):
     E2=int(E2)
     if E1>E2:
      return "Es Legal"
-    elif E1=E2:
-     return "Es Legal"
     elif E1<E2:
      return "Es Ilegal"
     elif E2>E1:
-     return "Es Legal"
-    elif E2=E1:
      return "Es Legal"
     elif E2<E1:
      return "Es Ilegal"

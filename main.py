@@ -6,13 +6,14 @@ app=FastAPI()
 def index():
      return "Hola a todos, quieres saber de pokemon"
 
-@app.get("/Pokemon/{num}")
+@app.get("/MCU/{num}")
 def pokemon(num):
     pokemons={
-    "1":"Bulbasaur",
-    "2":"Ivysaur",
-    "3":"Venasaur",
-    "4":"Charmander"
+    "1":"Iron Man",
+    "2":"The Incredible Hulk",
+    "3":"Iron Man 2",
+    "4":"Thor",
+    "5":"Captain America: The First Avenger"
          
     }
     return (pokemons[num])
